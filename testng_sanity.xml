@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.mystore.utility.ListenerClass"></listener>
+	</listeners>
+	
+	
+	<test thread-count="1" name="Sanity">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+				<!-- <include name="regression"></include> -->
+			</run>
+		</groups>
+		<classes>
+			<!-- class name="com.mystore.testcases.LoginLumaPageTest" /> -->
+			<!-- class name="com.mystore.testcases.LumaLoginPageTest" /> -->
+			<!-- class name="com.mystore.testcases.LumaAddressPageTest" /> -->
+			<!-- class name="com.mystore.testcases.OrderPageTest" /> -->
+			<!-- <class name="com.mystore.testcases.SearchResultPageTest" />
+			<class name="com.mystore.testcases.LoginPageTest" />
+			<class name="com.mystore.testcases.AddToCartPageTest" />
+			<class name="com.mystore.testcases.TC08_LumaAccountCreationPageTest" />
+			<class name="com.mystore.testcases.IndexPageTest" /> -->
+			<!-- class name="com.mystore.testcases.EndToEndTest" /> -->
+			<class name="com.mystore.testcases.TC08_LumaEndToEndTest" /> 
+			<!-- class name="com.mystore.testcases.TC04_ComputerDatabasePageTest" /> -->
+			<!-- class name="com.mystore.testcases.TC08_LumaAccountCreationPageTest" /> -->
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
